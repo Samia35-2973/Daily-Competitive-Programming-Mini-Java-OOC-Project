@@ -1,110 +1,41 @@
-﻿![](images/Aspose.Words.97b3da7f-6ff7-408f-b5ee-fa9eda91ba6a.001.png)
-
-**Daffodil International University**
-
-**Project** 
-
-**On** 
-
-**“Java GUI Project”**
-
-**Course Title :** Object Oriented Concepts![](images/Aspose.Words.97b3da7f-6ff7-408f-b5ee-fa9eda91ba6a.002.png)
-
-**Course Code :** SE211
-
-**Semester       :**  Summer 2021
-
-**Submitted To:** 
-
-**Ms. Farzana Sadia**
-
-Assistant Professor
-
-Department of Software Engineering
-
-**Submitted By:**
-
-**Samia Haque Tisha**
-
-ID : 201-35-2973
-
-Section : A
-
-Department of Software Engineering
-
-Daily Competitive Programming 
-
-**August 08, 2021**
-
-Overview
+﻿# Overview
 
 “Daily Competitive Programming” is a Desktop Application developed in Java Programming Language. Often Beginners in competitive programming face some problems to find their strategy to improve. Keeping track of our daily activity on competitive programming is the most important thing in this sector. So, I have come up with a plan to develop such a tracker with my present knowledge. It is a mini application with some tracking features. 
 
-Goals
+# Goals
 
-1. **Track Problem Solving:** It is designed specially for competitive programmers who want to keep track of their daily problem solving and coding activities. 
-1. **Track Learning Progress:**  Anyone can keep the daily learning activity on a track so that he/she will be able to see the progress done so far.**  
-1. **Feedback on Progress:**  Users of the application will get timely feedback on their progress to not lose hope on Competitive Programming. 
+- **Track Problem Solving:** It is designed specially for competitive programmers who want to keep track of their daily problem solving and coding activities. 
+- **Track Learning Progress:**  Anyone can keep the daily learning activity on a track so that he/she will be able to see the progress done so far.**  
+- **Feedback on Progress:**  Users of the application will get timely feedback on their progress to not lose hope on Competitive Programming. 
 
-Specifications
+# Specifications
 
 Students like me will get a lot of benefits by using the system as well as building a beginner strategy. This is a mini project built with Java Swing (GUI), Object Oriented Concepts using Java Language. 
 
-Requirements
+# Requirements
 
 The requirements of the project “Daily Competitive Programming” are given below: 
 
 1. Unregistered Users can register on the system 
-1. Registered Users, Admin and Learner can log in to the system 
-1. Registered Solvers can set the daily problem solving target on the system 
-1. Registered Solvers can add the total number of solved problems daily to the system 
-1. Registered Solvers can view the list of the daily solving percentages according to the daily target on the system. 
-1. Registered Solvers can view the number of total solved problems. 
-1. Registered Solvers can view the list of daily feedback according to the percentage. 
-1. Registered Solvers can give feedback about the system 
-1. Learners can add new programming topics that he/she learned 
-1. Learners can view the topics that he/she learned. 
-1. Admin can see the list of all system users 
-1. Admin can view feedback about the system. 
+2. Registered Users, Admin and Learner can log in to the system 
+3. Registered Solvers can set the daily problem solving target on the system 
+4. Registered Solvers can add the total number of solved problems daily to the system 
+5. Registered Solvers can view the list of the daily solving percentages according to the daily target on the system. 
+6. Registered Solvers can view the number of total solved problems. 
+7. Registered Solvers can view the list of daily feedback according to the percentage. 
+8. Registered Solvers can give feedback about the system 
+9. Learners can add new programming topics that he/she learned 
+10. Learners can view the topics that he/she learned. 
+11. Admin can see the list of all system users 
+12. Admin can view feedback about the system. 
 
-Objects 
+# Objects 
 
 1. Problem Solver 
-1. Learner 
-1. Admin 
+2. Learner 
+3. Admin 
 
-States and Behaviors of Object 
-
-1. **Object - Problem Solver:** 
-- **State:** 
-1. Username 
-1. Password 
-1. Daily Problem Solving Target 
-- **Behavior:** 
-1) Registered Solvers can login to the system. 
-1) Unregistered Solvers can register to the system. 
-1) Registered Solvers can insert the daily problem solving target on the system. 
-1) Registered Solvers can add the number of solved problems daily to the system. 
-1) Registered Solvers can view the daily solving percentage according to the daily target on the system. 
-1) Registered Solvers can view the number of total solved problems. 
-1) Registered  Solvers  can  view  the  list of  daily feedback  according  to the percentage. 
-1) Registered Solvers can give feedback about the system. 
-2. **Object - Learner:** 
-- **State:** 
-1. Username 
-1. Programming Language 
-- **Behavior:** 
-1) Learners can add new programming topics that he/she learned. 
-1) Learners can view the topics that he/she learned. 
-3. **Object - Admin:** 
-- **State:** 
-1. Username 
-1. Password 
-- **Behavior:** 
-1) Admin can view feedback about the system. 
-1) Admin can see the list of all system users. 
-
-Project’s Procedure 
+# Project’s Procedure 
 
 This is a simple project. Only one person from one device can save their record in this system. If they sign up again the previous record will simply vanish away. This is just a mini project. I will try to update it further with my knowledge.  
 
@@ -273,5 +204,3 @@ The Example of this 3 area is given below
 Tutorial    View⇒[ Java Project.mp4](https://drive.google.com/file/d/1fn6iAJsjoRrJGpiSft_2IThvLzD8VcDc/view?usp=sharing)![](images/Aspose.Words.97b3da7f-6ff7-408f-b5ee-fa9eda91ba6a.042.png)
 
 This  is  how  the  system  works.  Competitive  Programmers  can  use  this  app  to  track  his programming activity on a daily life basis. This will help the beginners to reach his goal easily. 
-
-**The End** 
