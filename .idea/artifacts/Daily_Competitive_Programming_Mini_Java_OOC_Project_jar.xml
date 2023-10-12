@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Daily-Competitive-Programming-Mini-Java-OOC-Project:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Daily_Competitive_Programming_Mini_Java_OOC_Project_jar</output-path>
+    <root id="archive" name="Daily-Competitive-Programming-Mini-Java-OOC-Project.jar">
+      <element id="module-output" name="Daily-Competitive-Programming-Mini-Java-OOC-Project" />
+    </root>
+  </artifact>
+</component>
