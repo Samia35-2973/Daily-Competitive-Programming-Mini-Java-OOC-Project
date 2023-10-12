@@ -1,41 +1,195 @@
-﻿# Overview
+# Daily Competitive Programming - Mini CP Tracker
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Installation](#installation)
+    1. [Windows](#windows)
+        1. [Prerequisite: Install OpenJDK 18](#prerequisite-install-openjdk-18)
+        2. [Download and Run the Application](#download-and-run-the-application)
+    2. [Linux](#linux)
+        1. [Prerequisite: Install OpenJDK 18](#prerequisite-install-openjdk-18)
+        2. [Troubleshooting Steps](#troubleshooting-steps)
+        3. [Download and Run the Application](#download-and-run-the-application)
+3. [Guideline Tutorial](#guideline-tutorial)
+4. [Goals](#goals)
+5. [Specifications](#specifications)
+6. [Project’s Guideline](#projects-guideline)
+7. [Conclusion](#conclusion)
+
+ 
+## Overview
 
 “Daily Competitive Programming” is a Desktop Application developed in Java Programming Language. Often Beginners in competitive programming face some problems to find their strategy to improve. Keeping track of our daily activity on competitive programming is the most important thing in this sector. So, I have come up with a plan to develop such a tracker with my present knowledge. It is a mini application with some tracking features. 
 
-# Goals
+## Installation
+
+I suggest you to follow the steps properly and patiently. I tried to make it as simple as possible and highlighted the issues with solution that I faced running the appplication.
+
+### Windows
+
+#### Prerequisite: Install OpenJDK 18
+
+Before using this application on Windows, you need to ensure that you have OpenJDK 18 installed. Here are the steps:
+
+1. Download and install OpenJDK 18 for Windows from the official AdoptOpenJDK website: [Download Java 18](https://adoptium.net/releases.html?variant=openjdk18&jvmVariant=hotspot).
+
+2. Follow the installation instructions provided on the website.
+
+#### Download and Run the Application
+
+Now, you can download and run the application:
+
+1. Download the full repository from the GitHub page. Click the "Download" button or use the following link: [Download Repository](https://github.com/Samia35-2973/Daily-Competitive-Programming-Mini-Java-OOC-Project/archive/refs/heads/master.zip).
+
+2. Extract the downloaded ZIP file to a location of your choice on your Windows system.
+
+3. Open a Command Prompt and navigate to the directory where you extracted the repository. For example:
+
+   ```bash
+   cd path\to\Daily-Competitive-Programming-Mini-Java-OOC-Project\out\artifacts
+   ```
+
+4. To run the application, use the following command:
+
+   ```bash
+   java -jar "Daily-Competitive-Programming-Mini-Java-OOC-Project.jar"
+   ```
+
+### Linux
+
+#### Prerequisite: Install OpenJDK 18
+
+Before using this application on Linux, you need to ensure that you have OpenJDK 18 installed. Here are the steps:
+
+1. Open a terminal.
+
+2. Update your package repository:
+
+   ```bash
+   sudo apt update
+   ```
+
+3. Install OpenJDK 18 with the following commands:
+
+   ```bash
+   sudo apt install software-properties-common
+   sudo add-apt-repository ppa:adoptopenjdk/ppa
+   sudo apt update
+   sudo apt install adoptopenjdk-18-hotspot
+   ```
+
+#### Troubleshooting Steps
+
+If you experienced issues running the application with Java 18, here's how you resolved the problem:
+
+You can download and install it in /opt/ so it does not interfere with the currently installed version. Commands:
+
+Download:
+
+```bash
+wget https://download.java.net/java/GA/jdk18/43f95e8614114aeaa8e8a5fcf20a682d/36/GPL/openjdk-18_linux-x64_bin.tar.gz
+```
+Extract the download (replace {version} with the one downloaded):
+
+```bash
+tar -xvf openjdk-18._linux-{version}
+```
+Move it to /opt/:
+
+```bash
+sudo mv jdk-18* /opt/
+```
+(replace jdk-18 to something else if you want) and set the environment variables:
+
+```bash
+export JAVA_HOME=/opt/jdk-18
+export PATH=$PATH:$JAVA_HOME/bin
+```
+
+To check if that went correctly:
+
+```bash
+cd /opt/jdk-18/
+java --version
+echo $JAVA_HOME
+```
+
+If you've correctly updated the JAVA_HOME and PATH environment variables, and the /opt/jdk-18/bin directory is in the path before other directories containing Java binaries. However, the issue is persisting. To troubleshoot further, you can consider the following steps:
+
+Check Symlinks: It's possible that you have symbolic links to Java binaries that are pointing to a different Java version. Use the which command to check the location of the java command:
+
+```bash
+which java
+```
+This will show the full path to the java binary. Make sure it points to /opt/jdk-18/bin/java. If not-
+
+You can manually create an alternative for Java 18:
+
+1. Create an alternative for Java 18:
+
+   ```bash
+   sudo update-alternatives --install /usr/bin/java java /opt/jdk-18/bin/java 1
+   ```
+
+   This command instructs the system to create a new alternative named `java` that points to the `java` executable in the `/opt/jdk-18` directory. The `1` at the end signifies the priority (higher number means higher priority).
+
+2. Set Java 18 as the default:
+
+   ```bash
+   sudo update-alternatives --config java
+   ```
+
+   You should see a list of alternatives. Select the number corresponding to the Java 18 installation in `/opt/jdk-18`.
+
+3. Verify the change:
+
+   ```bash
+   java --version
+   ```
+
+   It should now display the version information for Java 18.
+
+#### Download and Run the Application
+
+Now, you can download and run the application:
+
+1. Download the full repository from the GitHub page. Click the "Download" button or use the following link: [Download Repository](https://github.com/Samia35-2973/Daily-Competitive-Programming-Mini-Java-OOC-Project/archive/refs/heads/master.zip).
+
+2. Extract the downloaded ZIP file to a location of your choice on your Linux system.
+
+3. Open a terminal.
+
+4. Navigate to the directory where you extracted the repository:
+
+   ```bash
+   cd path/to/Daily-Competitive-Programming-Mini-Java-OOC-Project/out/artifacts
+   ```
+
+5. To run the application, use the following command:
+
+   ```bash
+   java -jar "Daily-Competitive-Programming-Mini-Java-OOC-Project.jar"
+   ```
+
+Enjoy using the Daily Competitive Programming Mini Java OOC Project!
+
+## Guideline Tutorial
+
+[Java Project.mp4](https://drive.google.com/file/d/1fn6iAJsjoRrJGpiSft_2IThvLzD8VcDc/view?usp=sharing)
+
+
+## Goals
 
 - **Track Problem Solving:** It is designed specially for competitive programmers who want to keep track of their daily problem solving and coding activities. 
 - **Track Learning Progress:**  Anyone can keep the daily learning activity on a track so that he/she will be able to see the progress done so far.**  
 - **Feedback on Progress:**  Users of the application will get timely feedback on their progress to not lose hope on Competitive Programming. 
 
-# Specifications
+## Specifications
 
 Students like me will get a lot of benefits by using the system as well as building a beginner strategy. This is a mini project built with Java Swing (GUI), Object Oriented Concepts using Java Language. 
 
-# Requirements
-
-The requirements of the project “Daily Competitive Programming” are given below: 
-
-1. Unregistered Users can register on the system 
-2. Registered Users, Admin and Learner can log in to the system 
-3. Registered Solvers can set the daily problem solving target on the system 
-4. Registered Solvers can add the total number of solved problems daily to the system 
-5. Registered Solvers can view the list of the daily solving percentages according to the daily target on the system. 
-6. Registered Solvers can view the number of total solved problems. 
-7. Registered Solvers can view the list of daily feedback according to the percentage. 
-8. Registered Solvers can give feedback about the system 
-9. Learners can add new programming topics that he/she learned 
-10. Learners can view the topics that he/she learned. 
-11. Admin can see the list of all system users 
-12. Admin can view feedback about the system. 
-
-# Objects 
-
-1. Problem Solver 
-2. Learner 
-3. Admin 
-
-# Project’s Procedure 
+## Project’s Guideline 
 
 This is a simple project. Only one person from one device can save their record in this system. If they sign up again the previous record will simply vanish away. This is just a mini project. I will try to update it further with my knowledge.  
 
@@ -201,6 +355,6 @@ The Example of this 3 area is given below
 
 ![](images/Aspose.Words.97b3da7f-6ff7-408f-b5ee-fa9eda91ba6a.041.jpeg)
 
-Tutorial    View⇒[ Java Project.mp4](https://drive.google.com/file/d/1fn6iAJsjoRrJGpiSft_2IThvLzD8VcDc/view?usp=sharing)![](images/Aspose.Words.97b3da7f-6ff7-408f-b5ee-fa9eda91ba6a.042.png)
+## Conclusion
 
 This  is  how  the  system  works.  Competitive  Programmers  can  use  this  app  to  track  his programming activity on a daily life basis. This will help the beginners to reach his goal easily. 
